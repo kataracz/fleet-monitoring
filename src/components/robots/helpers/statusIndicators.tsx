@@ -10,7 +10,7 @@ import BoltRoundedIcon from "@mui/icons-material/BoltRounded";
 
 // Types
 import type { ChipProps } from "@mui/material";
-import { Status } from "../types";
+import { Status, ROBOT_STATUS } from "../types";
 
 export const statusIndicators = (
   status: Status
@@ -22,31 +22,31 @@ export const statusIndicators = (
   const theme = useTheme();
 
   switch (status) {
-    case "Idle":
+    case ROBOT_STATUS.idle:
       return {
         chipColor: "default",
         icon: <ScheduleRoundedIcon />,
         color: theme.palette.grey[500],
       };
-    case "On Delivery":
+    case ROBOT_STATUS.onDelivery:
       return {
         chipColor: "info",
         icon: <PinDropRoundedIcon />,
         color: theme.palette.info.dark,
       };
-    case "Returning":
+    case ROBOT_STATUS.returning:
       return {
         chipColor: "info",
         icon: <ModeOfTravelRoundedIcon />,
         color: theme.palette.info.dark,
       };
-    case "Error":
+    case ROBOT_STATUS.error:
       return {
         chipColor: "error",
         icon: <ErrorRoundedIcon />,
         color: theme.palette.error.dark,
       };
-    case "Charging":
+    case ROBOT_STATUS.charging:
       return {
         chipColor: "charging",
         icon: <BoltRoundedIcon />,
