@@ -8,6 +8,7 @@ See in Figma: https://www.figma.com/design/k4MUYOOkqxqf83ASh2HLL6/Robot-Info-Car
 
 ```bash
 git clone "https://github.com/kataracz/fleet-monitoring.git"
+cd fleet-monitoring
 npm install
 ```
 
