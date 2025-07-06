@@ -7,8 +7,7 @@ See in Figma: https://www.figma.com/design/k4MUYOOkqxqf83ASh2HLL6/Robot-Info-Car
 ## Installation
 
 ```bash
-git clone ""
-cd fleet-monitoring
+git clone "https://github.com/kataracz/fleet-monitoring.git"
 npm install
 ```
 
